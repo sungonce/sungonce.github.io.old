@@ -92,7 +92,7 @@
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}
           {%- if entry.highlight %}
-            {%- capture entryhighlight -%}<b> ({{entry.highlight}})</b> {%- endcapture -%}
+            {%- capture entryhighlight -%}<br><b>({{entry.highlight}})</b> {%- endcapture -%}
           {%- else -%}
             {%- capture entryhighlight -%}{%- endcapture -%}
           {%- endif %}
@@ -102,7 +102,7 @@
           {%- if entry.year -%}
             {%- capture entryyear -%}{{ ", " }}{{entry.year}}{%- endcapture -%}
           {%- endif -%}
-          {%- capture periodical -%}{{ entrytype }}{{ entryhighlight }}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+          {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{{ entryhighlight }}{%- endcapture -%}
           <div class="periodical">
             {{ periodical | strip }}
           </div>
