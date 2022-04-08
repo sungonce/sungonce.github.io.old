@@ -2,28 +2,28 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-	<div class="col-sm-2">
+	      <div class="col-sm-2">
    	     {%- if entry.teaser -%}
   	        {% if entry.teaser contains '://' -%}
-  	        <img class="teaser" src="{{ entry.teaser }}">
-   	       {%- else -%}
-   	       <img class="teaser" src="{{ entry.teaser | prepend: '/assets/img/paper_teasers/' | relative_url }}">
-   	       {%- endif -%}
-                  {%- else %}
-                      <div class="abbr">
-                        {%- if entry.abbr -%}
-                          {%- if site.data.venues[entry.abbr] -%}
-                          <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
-                          {%- else -%}
-                          <abbr class="badge">{{entry.abbr}}</abbr>
-                          {%- endif -%}
-                        {%- endif -%}
-                        {%- if entry.oral %}
-                          <highlight class="badge">Oral Presentation</highlight>
-                        {%- endif %}
-                      </div>
+  	          <img class="teaser" src="{{ entry.teaser }}">
+            {%- else -%}
+   	          <img class="teaser" src="{{ entry.teaser | prepend: '/assets/img/paper_teasers/' | relative_url }}">
+   	        {%- endif -%}
+          {%- else %}
+            <div class="abbr">
+              {%- if entry.abbr -%}
+                {%- if site.data.venues[entry.abbr] -%}
+                  <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+                {%- else -%}
+                  <abbr class="badge">{{entry.abbr}}</abbr>
+                {%- endif -%}
+              {%- endif -%}
+              {%- if entry.oral %}
+                <highlight class="badge">Oral Presentation</highlight>
+              {%- endif %}
+            </div>
    	     {%- endif -%}
- 	</div>
+        /div>
 
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="col-sm-9">

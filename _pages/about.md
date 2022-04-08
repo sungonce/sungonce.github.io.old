@@ -23,8 +23,7 @@ social: true  # includes social icons at the bottom of the page
 <p>I am a Ph.D. student advised by Professor <a href="https://cilab.yonsei.ac.kr">Euntai Kim</a>, at <a href="https://ee.yonsei.ac.kr/" target="_blank" rel="noopener">Electrical and Electronic Engineering</a>, 
 <a href="https://yonsei.ac.kr/" target="_blank" rel="noopener">Yonsei University</a>.</p>
 
-<p>I am broadly interested in computer vision and mobile robotics.<br>
-Specifically, my research interests include
+<p>I am broadly interested in computer vision and mobile robotics. Specifically, my research interests include
 <ul>
 <li>Image Retrieval / Place Recognition</li> 
 <li>Image / Video Understanding</li> 
