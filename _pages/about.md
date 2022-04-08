@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph. D. Candidate, <a href='https://www.yonsei.ac.kr/en_sc/index.jsp'>Yonsei University</a>.
+subtitle: 
 
 profile:
   align: right
@@ -19,6 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
+<p>Ph. D. Candidate, <a href='https://www.yonsei.ac.kr/en_sc/index.jsp'>Yonsei University</a>.</p>
 <p>I am a Ph.D. student advised by Professor <a href="https://cilab.yonsei.ac.kr">Euntai Kim</a>, at <a href="https://ee.yonsei.ac.kr/" target="_blank" rel="noopener">Electrical and Electronic Engineering</a>, 
 <a href="https://yonsei.ac.kr/" target="_blank" rel="noopener">Yonsei University</a>.</p>
 
