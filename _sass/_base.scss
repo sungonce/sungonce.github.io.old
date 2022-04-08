@@ -22,7 +22,7 @@ table {
 }
 
 a, table.table a {
-  color: var(--global-theme-color);
+  color: var(--global-link-color);
   &:hover {
     color: var(--global-theme-color);
     text-decoration: underline;
@@ -469,7 +469,7 @@ footer.sticky-bottom {
       }
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          border-bottom: 1px dashed var(--global-link-color);
           &:hover {
               border-bottom-style: solid;
               text-decoration: none;
