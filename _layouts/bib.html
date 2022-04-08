@@ -31,7 +31,8 @@
           {{reference}}
         {%- else %}
           <!-- Title -->
-          <div class="title">{<b>{entry.title}</b>}</div>
+          {%- capture entrytitle -%}<b>{{entry.title}}</b>{%- endcapture -%}
+          <div class="title">{{entrytitle}}</div>
           <!-- Author -->
           <div class="author">
           {%- for author in entry.author_array -%}
