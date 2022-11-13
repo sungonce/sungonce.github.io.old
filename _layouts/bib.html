@@ -2,28 +2,28 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-	      <div class="col-sm-2">
+	<div class="col-sm-2">
    	     {%- if entry.teaser -%}
   	        {% if entry.teaser contains '://' -%}
-  	          <img class="teaser" src="{{ entry.teaser }}">
-            {%- else -%}
-   	          <img class="teaser" src="{{ entry.teaser | prepend: '/assets/img/paper_teasers/' | relative_url }}">
-   	        {%- endif -%}
-          {%- else %}
-            <div class="abbr">
-              {%- if entry.abbr -%}
-                {%- if site.data.venues[entry.abbr] -%}
-                  <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
-                {%- else -%}
-                  <abbr class="badge">{{entry.abbr}}</abbr>
-                {%- endif -%}
-              {%- endif -%}
-              {%- if entry.oral %}
-                <highlight class="badge">Oral Presentation</highlight>
-              {%- endif %}
-            </div>
+  	        <img class="teaser" src="{{ entry.teaser }}">
+   	       {%- else -%}
+   	       <img class="teaser" src="{{ entry.teaser | prepend: '/assets/img/paper_teasers/' | relative_url }}">
+   	       {%- endif -%}
+                  {%- else %}
+                      <div class="abbr">
+                        {%- if entry.abbr -%}
+                          {%- if site.data.venues[entry.abbr] -%}
+                          <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+                          {%- else -%}
+                          <abbr class="badge">{{entry.abbr}}</abbr>
+                          {%- endif -%}
+                        {%- endif -%}
+                        {%- if entry.oral %}
+                          <highlight class="badge">Oral Presentation</highlight>
+                        {%- endif %}
+                      </div>
    	     {%- endif -%}
-        </div>
+ 	</div>
 
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="col-sm-9">
@@ -36,8 +36,9 @@
           <!-- Author -->
           <div class="author">
           {%- for author in entry.author_array -%}
+            {%- assign authorlast = author.last | remove_first: "*" -%}
             {%- assign author_is_self = false -%}
-            {%- if author.last == site.scholar.last_name%}
+            {%- if authorlast == site.scholar.last_name%}
               {%- if site.scholar.first_name contains author.first -%}
                 {%- assign author_is_self = true -%}
               {%- endif -%}
@@ -45,7 +46,7 @@
             {%- assign coauthor_url = nil -%}
             {%- if site.data.coauthors[author.first] -%}
               {%- for coauthor in site.data.coauthors[author.first] -%}
-                {%- if coauthor.lastname contains author.last -%}
+                {%- if coauthor.lastname contains authorlast -%}
                   {%- assign coauthor_url = coauthor.url -%}
                   {%- break -%}
                 {%- endif -%}
@@ -88,22 +89,44 @@
           {% if entry.type == "article" -%}
             {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
           {%- elsif entry.type == "inproceedings" -%}
-            {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+            {%- capture entrytype -%}<em>{{entry.booktitle}}</em> {%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}
+          {%- if entry.oral %}
+            {%- capture entryoral -%}<br><span style="color: #000000;background-color: #00ffff;"><b>&nbsp;&nbsp;{{entry.oral}}&nbsp;&nbsp;</b></span> {%- endcapture -%}
+          {%- else -%}
+            {%- capture entryoral -%}{%- endcapture -%}
+          {%- endif %}
           {%- if entry.highlight %}
-            {%- capture entryhighlight -%}<br><span style="color: #000000;background-color: #00ffff;"><b>&nbsp;&nbsp;{{entry.highlight}}&nbsp;&nbsp;</b></span> {%- endcapture -%}
+            <!-- {%- capture entryhighlight -%}<br><b> ({{entry.highlight}})</b> {%- endcapture -%} -->
+            {%- capture entryhighlight -%}<br><span style="color: #000000;background-color: #00ff80;"><b>&nbsp;&nbsp;{{entry.highlight}}&nbsp;&nbsp;</b></span> {%- endcapture -%}
           {%- else -%}
             {%- capture entryhighlight -%}{%- endcapture -%}
           {%- endif %}
           {%- if entry.month -%}
             {%- capture entrymonth -%}{{ ", " }}{{entry.month | capitalize}}{%- endcapture -%}
+          {%- else -%}
+            {%- capture entrymonth -%}{%- endcapture -%}
           {%- endif -%}
           {%- if entry.year -%}
             {%- capture entryyear -%}{{ ", " }}{{entry.year}}{%- endcapture -%}
           {%- endif -%}
-          {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{{ entryhighlight }}{%- endcapture -%}
+          {%- if entry.impactfactor %}
+            {%- capture entryimpactfactor -%}<br><b> ({{entry.impactfactor}})</b> {%- endcapture -%}
+          {%- else -%}
+            {%- capture entryimpactfactor -%}{%- endcapture -%}
+          {%- endif %}
+          {%- if entry.earlyaccess -%}
+            {%- if entry.earlyaccess == "true" -%}
+              {%- capture entryearlyaccess -%}{{ " (Accepted)" }}{%- endcapture -%}
+            {%- else -%}
+              {%- capture entryearlyaccess -%}{%- endcapture -%}
+            {%- endif -%}
+          {%- else -%}
+            {%- capture entryearlyaccess -%}{%- endcapture -%}
+          {%- endif -%}
+          {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{{ entryearlyaccess }}{{ entryimpactfactor }}{{ entryoral }}{{ entryhighlight }}{%- endcapture -%}
           <div class="periodical">
             {{ periodical | strip }}
           </div>
@@ -162,6 +185,9 @@
           {%- endif %}
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+          {%- endif %}
+          {%- if entry.video %}
+            <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
           {%- endif %}
           </div>
 

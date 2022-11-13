@@ -19,7 +19,7 @@ icon: icon.png # the emoji used as the favicon (alternatively, provide image nam
 
 url: https://sungonce.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: yes # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -68,7 +68,7 @@ blogger_url: # your blogger URL
 work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
-dblp_url: # your DBLP profile url
+dblp_url: https://dblp.org/pid/04/3865-2 # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 
 contact_note:
