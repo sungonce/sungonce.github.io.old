@@ -107,7 +107,12 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-
+  honors:
+    defaults:
+      layout: post
+    output: true
+    permalink: /honors/:path/
+    
 news_limit: 5
 
 # -----------------------------------------------------------------------------
