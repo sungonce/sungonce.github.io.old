@@ -3,8 +3,8 @@ layout: post
 inline: true
 ---
   
-**Qualcomm Innovation Fellowship South Korea (2022)**
-- Winner ($3,000) \- *Correlation Verification for Image Retrieval* (CVPR2022)
+**[Qualcomm Innovation Fellowship](https://www.qualcomm.com/research/university-relations/innovation-fellowship/winners) (2022)**
+- Winner ($3,000) \- *Correlation Verification for Image Retrieval* (CVPR 2022)
 
 **1st Yonsei AI Workshop (2022)**
-- Excellence Vision Research Award \- *Correlation Verification for Image Retrieval* (CVPR2022)
+- Excellence Vision Research Award \- *Correlation Verification for Image Retrieval* (CVPR 2022)
