@@ -16,7 +16,9 @@ profile:
     </p>
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
+honors: true # includes a list of honors items
 social: true  # includes social icons at the bottom of the page
+
 ---
 
 <p>Ph. D. Candidate, <a href='https://www.yonsei.ac.kr/en_sc/index.jsp'>Yonsei University</a>.</p>
