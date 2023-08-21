@@ -8,3 +8,6 @@ inline: true
 
 **1st Yonsei AI Workshop (2022)**
 - Excellence Vision Research Award \- *Correlation Verification for Image Retrieval* (CVPR 2022)
+
+**2023-1 Graduate School of Yonsei University Thesis Award (2023)**
+- Encouragement Award \- *Correlation Verification for Image Retrieval* (CVPR 2022)

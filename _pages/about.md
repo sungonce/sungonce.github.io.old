@@ -8,9 +8,9 @@ profile:
   align: right
   image: seongwonlee.jpg
   address: >
-    <p>📧 won4113 [at] yonsei.ac.kr</p>
-    <p>📍 C607, 3rd Eng. Bldg, 50 Yonsei-ro, Seodaemun-gu, Seoul, Korea, 03722
-    <p align="center"><a href="https://drive.google.com/file/d/1RjcLqpcsGlgZ7X9hUAV8mX7n1NG1fU-r/view?usp=sharing"><b>CV</b></a>
+    <p>📧 won4113 [at] gmail.com</p>
+    <p>📍 Electronics and Telecommunications Research Institute (ETRI), 218 Gajeong-ro, Yuseong-gu, Daejeon, Korea, 34129
+    <p align="center"><a href="https://drive.google.com/file/d/11JOSPNvPueqDmAP_dmNoHoNHaKVTLIqX/view?usp=sharing"><b>CV</b></a>
     | <a href="https://scholar.google.com/citations?hl=ko&user=wKlb8_gAAAAJ"><b>Google Scholar</b></a>
     | <a href="https://github.com/sungonce"><b>Github</b></a>
     </p>
@@ -21,10 +21,9 @@ social: true  # includes social icons at the bottom of the page
 
 ---
 
-<p>Ph. D. Candidate, <a href='https://www.yonsei.ac.kr/en_sc/index.jsp'>Yonsei University</a>.</p>
-<p>I am a Ph.D. student advised by Professor <a href="https://cilab.yonsei.ac.kr">Euntai Kim</a>, at <a href="https://ee.yonsei.ac.kr/" target="_blank" rel="noopener">Electrical and Electronic Engineering</a>, 
+<p>I am a researcher at <a href="https://www.etri.re.kr">Electronics and Telecommunications Research Institute (ETRI)</a>.</p>
+<p>I received my Ph.D. and B.S. degrees in <a href="https://ee.yonsei.ac.kr/" target="_blank" rel="noopener">Electrical and Electronic Engineering</a> from <a href="https://yonsei.ac.kr/" target="_blank" rel="noopener">Yonsei University</a> in 2023 and 2016, respectively, advised by Professor <a href="https://cilab.yonsei.ac.kr">Euntai Kim</a>.
 <a href="https://yonsei.ac.kr/" target="_blank" rel="noopener">Yonsei University</a>.
-I earned my B.S. degree in <a href="https://ee.yonsei.ac.kr/" target="_blank" rel="noopener">Electrical and Electronic Engineering</a> from <a href="https://yonsei.ac.kr/" target="_blank" rel="noopener">Yonsei University</a> in 2016.
 
 <p>I am broadly interested in computer vision and mobile robotics. Specifically, my research interests include
 <ul>
