@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-08-25 00:00:00
+date: 2023-07-11 00:00:00
 inline: true
 ---
 
-📃 A paper titled “RoomNeRF: Representing Empty Room as Neural Radiance Fields for View Synthesis” was accepted in BMVC 2023, Aberdeen, UK.
+🎉 I won the Encouragement Award at 2023-1 Graduate School of Yonsei University Thesis Award.
