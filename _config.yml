@@ -113,7 +113,7 @@ collections:
     output: true
     permalink: /honors/:path/
     
-news_limit: 5
+news_limit: 7
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
