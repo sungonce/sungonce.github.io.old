@@ -23,7 +23,6 @@ social: true  # includes social icons at the bottom of the page
 
 <p>I am a researcher at <a href="https://www.etri.re.kr">Electronics and Telecommunications Research Institute (ETRI)</a>.</p>
 <p>I received my Ph.D. and B.S. degrees in <a href="https://ee.yonsei.ac.kr/" target="_blank" rel="noopener">Electrical and Electronic Engineering</a> from <a href="https://yonsei.ac.kr/" target="_blank" rel="noopener">Yonsei University</a> in 2023 and 2016, respectively, advised by Professor <a href="https://cilab.yonsei.ac.kr">Euntai Kim</a>.
-<a href="https://yonsei.ac.kr/" target="_blank" rel="noopener">Yonsei University</a>.
 
 <p>I am broadly interested in computer vision and mobile robotics. Specifically, my research interests include
 <ul>
