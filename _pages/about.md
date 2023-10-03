@@ -10,7 +10,7 @@ profile:
   address: >
     <p>📧 won4113 [at] gmail.com</p>
     <p align="center"><a href="https://drive.google.com/file/d/11JOSPNvPueqDmAP_dmNoHoNHaKVTLIqX/view?usp=sharing"><b>CV</b></a>
-    | <a href="https://scholar.google.com/citations?hl=ko&user=wKlb8_gAAAAJ"><b>Google Scholar</b></a>
+    | <a href="https://scholar.google.com/citations?hl=en&user=wKlb8_gAAAAJ"><b>Google Scholar</b></a>
     | <a href="https://github.com/sungonce"><b>Github</b></a>
     </p>
 news: true  # includes a list of news items
