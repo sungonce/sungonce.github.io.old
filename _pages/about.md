@@ -21,15 +21,4 @@ social: true  # includes social icons at the bottom of the page
 
 ---
 
-<p>I am a researcher at <a href="https://www.etri.re.kr">Electronics and Telecommunications Research Institute (ETRI)</a>.</p>
-<p>I received my Ph.D. and B.S. degrees in <a href="https://ee.yonsei.ac.kr/" target="_blank" rel="noopener">Electrical and Electronic Engineering</a> from <a href="https://yonsei.ac.kr/" target="_blank" rel="noopener">Yonsei University</a> in 2023 and 2016, respectively, advised by Professor <a href="https://cilab.yonsei.ac.kr">Euntai Kim</a>.
-
-<p>I am broadly interested in computer vision and mobile robotics. Specifically, my research interests include
-<ul>
-<li>Image Retrieval / Place Recognition</li> 
-<li>Image / Video Understanding</li> 
-<li>Domain Adaptation / Generalization</li>
-<li>Image Representation Learning</li>
-<li>Localization / Mapping / SLAM (Simultaneous Localization and Mapping)</li>
-</ul>
-but not limited to.</p>
+<p>I am a researcher at <a href="https://www.etri.re.kr">Electronics and Telecommunications Research Institute (ETRI)</a>. I received my Ph.D. and B.S. degrees in <a href="https://ee.yonsei.ac.kr/" target="_blank" rel="noopener">Electrical and Electronic Engineering</a> from <a href="https://yonsei.ac.kr/" target="_blank" rel="noopener">Yonsei University</a> in 2023 and 2016, respectively, advised by Professor <a href="https://cilab.yonsei.ac.kr">Euntai Kim</a>. I am interested in building machines that can understand the world and communicate with humans. My research focuses on learning deep networks that can solve a wide range of problems using a few general interfaces.</p>
