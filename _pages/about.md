@@ -9,7 +9,6 @@ profile:
   image: seongwonlee.jpg
   address: >
     <p>📧 won4113 [at] gmail.com</p>
-    <p>📍 Electronics and Telecommunications Research Institute (ETRI), 218 Gajeong-ro, Yuseong-gu, Daejeon, Korea, 34129
     <p align="center"><a href="https://drive.google.com/file/d/11JOSPNvPueqDmAP_dmNoHoNHaKVTLIqX/view?usp=sharing"><b>CV</b></a>
     | <a href="https://scholar.google.com/citations?hl=ko&user=wKlb8_gAAAAJ"><b>Google Scholar</b></a>
     | <a href="https://github.com/sungonce"><b>Github</b></a>
@@ -19,6 +18,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 honors: true # includes a list of honors items
 social: true  # includes social icons at the bottom of the page
 
+# <p>📍 Electronics and Telecommunications Research Institute (ETRI), 218 Gajeong-ro, Yuseong-gu, Daejeon, Korea, 34129
+    
 ---
 
 <p>I am a researcher at <a href="https://www.etri.re.kr">Electronics and Telecommunications Research Institute (ETRI)</a>.</p>
